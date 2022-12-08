@@ -1,0 +1,25 @@
+.spinner {
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-timing-function: linear; 
+  animation-timing-function: ease;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    10% {
+        transform:rotate(-20deg);
+    }
+    20% {
+        transform:rotate(0deg);
+    }
+    
+    91% {
+        transform:rotate(380deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
