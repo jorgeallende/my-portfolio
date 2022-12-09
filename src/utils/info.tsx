@@ -5,7 +5,7 @@ export const sobre = {
 
 export const educacao = {
     title: "Educação",
-    text: "Ensino médio completo: Colégio Estadual João XXIII."
+    text: "Ensino médio completo: "
 }
 
 export const experiencia = {
