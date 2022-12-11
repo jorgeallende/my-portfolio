@@ -33,7 +33,6 @@ const AboutComponent = () => {
           >
             <img
               src={info == "sobre" ? IdentificationCardAlt : IdentificationCard}
-              className="fill-red-500 fill-white"
               alt=""
             />
           </div>
