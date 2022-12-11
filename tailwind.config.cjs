@@ -14,6 +14,12 @@ module.exports = {
         'base-cream-600': '#A89B75',
         'base-cream-700': '#BAA771',
         'mint-500': '#0A966C',
+        'red-500': '#AE2012',
+        'orange-500': '#CA6702',
+        'orange-600': '#BB3E03',
+        'orange-400': '#CCAC01',
+        'blue-500': '#0A9396',
+        'blue-600': '#005F73'
       }
     },
   },

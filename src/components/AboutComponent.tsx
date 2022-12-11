@@ -22,8 +22,8 @@ const AboutComponent = () => {
   }
 
   return (
-    <div className="h-screen flex items-center justify-around">
-      <div className="bg-base-cream-300 w-[540px] flex px-2 shadow-xl">
+    <div className="h-[90vh] py-16 flex items-center justify-around">
+      <div className="bg-base-cream-300 w-[540px] flex px-2 shadow-xl min-h-[70%]">
         <div className="w-14 flex flex-col items-center h-full gap-8 justify-around py-6 h-auto">
           <div
             className="cursor-pointer"
@@ -51,7 +51,10 @@ const AboutComponent = () => {
               InfoSwap("experiencia");
             }}
           >
-            <img src={info == "experiencia" ? CircleWavyCheckAlt : CircleWavyCheck} alt="" />
+            <img
+              src={info == "experiencia" ? CircleWavyCheckAlt : CircleWavyCheck}
+              alt=""
+            />
           </div>
           <div
             className="cursor-pointer"
@@ -95,8 +98,7 @@ const AboutComponent = () => {
                 ? "text-mint-500"
                 : ""
             }`}
-          >
-          </h1>
+          ></h1>
           <span className="text-justify">
             {info == "sobre" ? (
               <div>
@@ -107,7 +109,7 @@ const AboutComponent = () => {
               </div>
             ) : info == "educacao" ? (
               <div>
-                <strong>Ensino médio completo (2014 - 2017)</strong>
+                <strong>Ensino médio-técnico completo (2014 - 2017)</strong>
                 <br />
                 <span>
                   Completei o ensino médio no IFRN - Campus Mossoró, onde fiz
@@ -126,10 +128,34 @@ const AboutComponent = () => {
               </div>
             ) : info == "experiencia" ? (
               <div>
-                Me chamo Jorge Allende. Tenho 22 anos. Sou de Mossoró-RN e
-                atualmente estou cursando Ciência da Computação na Universidade
-                Federal do Rio Grande do Norte. Sou apaixonado por tecnologia,
-                programação e por artes visuais.
+                <strong>
+                  Estágio na Crevettic (2021 - 2022)
+                </strong>
+                <br />
+                <br />
+                <span>
+                  Estagiei na empresa <strong>Crevettic</strong>, uma empresa
+                  que desenvolve e mantem um sistema para auxilio de
+                  piscicultura, como desenvolvedor web. Trabalhei desenvolvendo
+                  e fazendo a manutenção de telas e componentes para a
+                  plataforma. Utilizei tecnologias como React, JavaScript, HTML,
+                  CSS entre outras.
+                </span>
+                <br />
+                <br />
+                <strong>
+                  Estágio em Prefeitura Municipal de Mossoró (2022 - Atualmente)
+                </strong>
+                <br />
+                <br />
+                <span>
+                  Atualmente estou estagiando na{" "}
+                  <strong>Prefeitura Municipal de Mossoró</strong> como
+                  desenvolvedor web. Lá eu desenvolvo sistemas para todas as
+                  áreas da gestão pública municipal, utilizando tecnologias como
+                  PHP, Laravel, MySQL, HTML, CSS e JavaScript.
+                </span>
+                <br />
               </div>
             ) : info == "habilidades" ? (
               <div>
@@ -145,7 +171,19 @@ const AboutComponent = () => {
         </div>
       </div>
 
-      <div className="text-end text-8xl font-black text-base-cream-300  flex-1">
+      <div
+        className={`text-end text-8xl font-black ${
+          info == "sobre"
+            ? "text-blue-600"
+            : info == "educacao"
+            ? "text-orange-500"
+            : info == "experiencia"
+            ? "text-red-600"
+            : info == "habilidades"
+            ? "text-mint-500"
+            : ""
+        } flex-1`}
+      >
         <h1>
           {info == "sobre"
             ? sobre.title

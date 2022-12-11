@@ -14,14 +14,21 @@ const Hero = () => {
   return (
     <div className="  text-base-black h-screen">
       {/* header */}
+
       <div className="flex justify-between items-center">
         <div>
           <img src={HeaderLogo} alt="" />
         </div>
-        <div className="cursor-pointer flex gap-2 items-center bg-base-cream-500 px-5 py-1 rounded-full text-base-cream-600 border-2 border-base-cream-600">
-          <img src={TelegramLogo} alt="" srcset="" />
-          Me contrate
-        </div>
+        <a
+          href="https://wa.me/5584981701942"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="cursor-pointer flex gap-2 items-center bg-base-cream-500 px-5 py-1 rounded-full text-base-cream-600 border-2 border-base-cream-600">
+            <img src={TelegramLogo} alt="" srcset="" />
+            Me contrate
+          </div>
+        </a>
       </div>
 
       {/* hero */}
