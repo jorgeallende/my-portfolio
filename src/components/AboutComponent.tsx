@@ -24,7 +24,7 @@ const AboutComponent = () => {
 
   return (
     <div className="h-[90vh] py-16 flex items-center justify-around">
-      <div className="bg-base-cream-300 w-[540px] flex px-2 shadow-xl min-h-[70%]">
+      <div className="bg-base-cream-300 w-[540px] flex px-2 shadow-xl min-h-[90%]">
         <div className="w-14 flex flex-col items-center h-full gap-8 justify-around py-6 h-auto">
           <div
             className="cursor-pointer"
