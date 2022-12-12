@@ -8,6 +8,7 @@ import CircleWavyCheckAlt from "../assets/CircleWavyCheckAlt.svg";
 import WrenchAlt from "../assets/WrenchAlt.svg";
 import { useState } from "react";
 import { sobre, educacao, experiencia, habilidades } from "../utils/info";
+import HeaderLogo from "../assets/header-logo.svg";
 
 type Props = {
   src?: string | undefined;
@@ -101,14 +102,17 @@ const AboutComponent = () => {
           <span className="text-justify">
             {info == "sobre" ? (
               <div>
-                Me chamo Jorge Allende. Tenho 22 anos. Sou de Mossoró-RN e
-                atualmente estou cursando Ciência da Computação na Universidade
-                Federal do Rio Grande do Norte. Sou apaixonado por tecnologia,
-                programação e por artes visuais.
+                Me chamo{" "}
+                <strong className="text-blue-600">Jorge Allende</strong>.{" "}
+                <br /> <br />
+                Tenho 22 anos. Sou de Mossoró-RN e atualmente estou cursando
+                Ciência da Computação na Universidade Federal do Rio Grande do
+                Norte. Sou apaixonado por tecnologia, programação e por artes
+                visuais.
               </div>
             ) : info == "educacao" ? (
               <div>
-                <strong>Ensino médio-técnico completo (2014 - 2017)</strong>
+                <strong className="text-orange-500">Ensino médio-técnico completo (2014 - 2017)</strong>
                 <br />
                 <span>
                   Completei o ensino médio no IFRN - Campus Mossoró, onde fiz
@@ -116,7 +120,7 @@ const AboutComponent = () => {
                 </span>
                 <br />
                 <br />
-                <strong>
+                <strong  className="text-orange-500">
                   Ensino superior em andamento (2018 - Atualmente)
                 </strong>
                 <br />
@@ -127,9 +131,7 @@ const AboutComponent = () => {
               </div>
             ) : info == "experiencia" ? (
               <div>
-                <strong>
-                  Estágio na Crevettic (2021 - 2022)
-                </strong>
+                <strong className="text-red-500">Estágio na Crevettic (2021 - 2022)</strong>
                 <br />
                 <br />
                 <span>
@@ -142,7 +144,7 @@ const AboutComponent = () => {
                 </span>
                 <br />
                 <br />
-                <strong>
+                <strong className="text-red-500">
                   Estágio em Prefeitura Municipal de Mossoró (2022 - Atualmente)
                 </strong>
                 <br />
@@ -158,10 +160,24 @@ const AboutComponent = () => {
               </div>
             ) : info == "habilidades" ? (
               <div>
-                Me chamo Jorge Allende. Tenho 22 anos. Sou de Mossoró-RN e
-                atualmente estou cursando Ciência da Computação na Universidade
-                Federal do Rio Grande do Norte. Sou apaixonado por tecnologia,
-                programação e por artes visuais.
+                No <strong className="text-mint-500 text-lg">front-end</strong>{" "}
+                possuo muita familiaridade com <strong>React</strong> e todo seu
+                ecossistema de bibliotecas, bem como <strong>HTML</strong>,{" "}
+                <strong>CSS</strong> e <strong>JavaScript</strong>. Mais
+                recentemente fui desafiado a trabalhar com{" "}
+                <strong>Blade</strong> no ambiente do Laravel e tem sido uma
+                ótima experiência de aprendizado.
+                <br />
+                <br />
+                No <strong className="text-mint-500 text-lg">back-end</strong>,
+                tenho conhecimento em <strong>PHP</strong>,{" "}
+                <strong>Laravel</strong>, <strong>NodeJS</strong> e{" "}
+                <strong>Java Spring</strong>. No quesito banco de dados já
+                utilizei <strong>Postgres</strong>, <strong>MySQL</strong>,{" "}
+                <strong>SQLite</strong>, <strong>MongoDB</strong> e outros.
+                Também tenho conhecimento em <i>Git</i> e <i>GitHub</i>, e em
+                ferramentas de design como <strong>Figma</strong> e{" "}
+                <strong>Photoshop</strong>.
               </div>
             ) : (
               ""

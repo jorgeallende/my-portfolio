@@ -24,9 +24,9 @@ const Hero = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="cursor-pointer flex gap-2 items-center bg-base-cream-500 px-5 py-1 rounded-full text-base-cream-600 border-2 border-base-cream-600">
+          <div className="cursor-pointer flex gap-2 items-center font-bold bg-blue-600 px-5 py-2 rounded-full text-base-cream-500">
             <img src={TelegramLogo} alt="" srcset="" />
-            Me contrate
+            Entre em contato
           </div>
         </a>
       </div>
