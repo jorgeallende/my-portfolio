@@ -23,13 +23,13 @@ const Project = (props: ProjectProps) => {
         >
           <span>{props?.linkTitle}</span>
           {props.link ? (
-            <img className={"h-4"} src={LinkSimple} alt="" srcset="" />
+            <img className={"w-4"} src={LinkSimple} alt="" srcset="" />
           ) : (
             ""
           )}
         </a>
       </div>
-      <img src={props?.imgSrc} className="max-w-[280px]" alt="" srcset="" />
+      <img src={props?.imgSrc} className="max-w-[210px]" alt="" srcset="" />
     </div>
   );
 };

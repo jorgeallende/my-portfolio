@@ -43,7 +43,7 @@ const Projects = () => {
             selectedProject == 2 ? "border-t-[40px]" : "border-t-[16px]"
           } border-t-[16px] hover:border-t-[40px] border-t-orange-400 text-orange-400 w-full flex-1 text-center`}
         >
-          Seeds
+          Stairs
         </div>
         <div
           onClick={() =>
@@ -55,7 +55,7 @@ const Projects = () => {
             selectedProject == 3 ? "border-t-[40px]" : "border-t-[16px]"
           } border-t-[16px] hover:border-t-[40px] border-t-blue-500 text-blue-500 w-full flex-1 text-center`}
         >
-          Stairs
+          Prefeitura de Mossoró
         </div>
         <div
           onClick={() =>
