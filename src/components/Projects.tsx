@@ -6,7 +6,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<number>(0);
 
   return (
-    <div className="h-screen mt-16">
+    <div className="h-screen my-16">
       <h1 className="text-6xl lg:text-8xl font-black text-base-cream-300 my-6">
         Projetos
       </h1>
