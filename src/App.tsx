@@ -32,7 +32,7 @@ function App() {
       <Hero />
       <AboutComponent />
       <Projects />
-      <Footer />
+      {/* <Footer /> */}
       
     </div>
   );
