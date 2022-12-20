@@ -23,7 +23,7 @@ const Project = (props: ProjectProps) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>{props?.linkTitle}</span>
+          <span className="min-w-max">{props?.linkTitle}</span>
           {props.link ? (
             <img className={"w-4"} src={LinkSimple} alt="" srcset="" />
           ) : (
