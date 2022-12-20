@@ -32,7 +32,7 @@ export const projects = [
   {
     name: "Prefeitura de Mossoró",
     description:
-      "Desenvolvi em equipe o site da Prefeitura de Mossoró. O site foi desenvolvido em PHP utilizando Laravel. Foi onde tive meu primeiro contato com o framework, e onde estou até agora. Fui um dos designados a desenvolver o front-end das páginas e componentes.",
+      "Desenvolvi em equipe o site da Prefeitura de Mossoró. O site foi desenvolvido em PHP utilizando Laravel. Foi onde tive meu primeiro contato com o framework. É o projeto onde estou trabalhando até agora. Fui um dos designados a desenvolver o front-end das páginas e componentes enquanto aprendo também a desenvolver sistemas back-end em Laravel.",
     imgSrc: PrefeituraLogo,
     link: "https://www.prefeiturademossoro.com.br",
     linkTitle: "Prefeitura de Mossoró",
@@ -40,7 +40,7 @@ export const projects = [
   {
     name: "Leon",
     description:
-      "Desenvolvi em equipe o site da Prefeitura de Mossoró. O site foi desenvolvido em PHP utilizando Laravel. Foi onde tive meu primeiro contato com o framework, e onde estou até agora. Fui um dos designados a desenvolver o front-end das páginas e componentes.",
+      "O Leon foi um projeto desenvolvido em equipe. O produto final era um sistema de uma academia inteligente, onde os alunos poderiam saber os horários de pico, marcar aulas coletivas ou até mesmo conferir a quantidade de pessoas treinando no momento. Um projeto bastante desafiador para a época e que foi essencial para meu crescimento em React.",
     imgSrc: LeonLogo,
     link: "https://github.com/jorgeallende/web-leon",
     linkTitle: "GitHub",

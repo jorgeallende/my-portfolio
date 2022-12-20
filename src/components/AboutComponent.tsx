@@ -10,9 +10,7 @@ import { useState } from "react";
 import { sobre, educacao, experiencia, habilidades } from "../utils/info";
 import HeaderLogo from "../assets/header-logo.svg";
 
-type Props = {F
-  src?: string | undefined;
-};
+type Props = { F; src?: string | undefined };
 
 const AboutComponent = () => {
   const [info, setInfo] = useState("sobre");
@@ -23,8 +21,8 @@ const AboutComponent = () => {
   }
 
   return (
-    <div className="h-auto my-16 pt-24 sm:pt-0 flex items-center justify-around flex-col-reverse gap-8 lg:gap-0 lg:flex-row">
-      <div className="bg-base-cream-300 w-11/12 sm:w-9/12 md:w-[540px] flex flex-col sm:flex-row px-2 shadow-xl min-h-[90%] ">
+    <div className="h-full my-16 pt-24 sm:pt-0 flex items-center justify-around flex-col-reverse gap-8 lg:gap-0 lg:flex-row">
+      <div className="bg-base-cream-300  w-11/12 sm:w-9/12 md:w-[540px] flex flex-col sm:flex-row px-2 shadow-xl h-full ">
         <div className="sm:w-14 flex flex-row md:flex-col items-center gap-8 justify-around py-6">
           <div
             className="cursor-pointer"
@@ -67,7 +65,9 @@ const AboutComponent = () => {
         </div>
         <div className="h-1 w-full sm:w-1 sm:h-auto bg-base-cream-600 flex sm:flex-col z-50">
           <div
-            className={`h-full w-full flex-1 ${info == "sobre" ? "bg-blue-600" : ""}`}
+            className={`h-full w-full flex-1 ${
+              info == "sobre" ? "bg-blue-600" : ""
+            }`}
           ></div>
           <div
             className={`h-full w-full sm:h-full sm:w-1 flex-1 ${
@@ -103,16 +103,23 @@ const AboutComponent = () => {
             {info == "sobre" ? (
               <div>
                 Me chamo{" "}
-                <strong className="text-blue-600">Jorge Allende</strong>.{" "}
-                <br /> <br />
-                Tenho 22 anos. Sou de Mossoró-RN e atualmente estou cursando
-                Ciência da Computação na Universidade Federal do Rio Grande do
-                Norte. Sou apaixonado por tecnologia, programação e por artes
-                visuais.
+                <strong className="text-blue-600">Jorge Allende</strong>. <br />{" "}
+                <br />
+                Tenho 22 anos. Moro de Mossoró-RN, onde nasci e fui criado.
+                Sempre tive uma inclinação para informática e sempre sonhei me
+                seguir na área. Hoje estou cursando{" "}
+                <strong className="text-blue-600">
+                  Ciência da Computação
+                </strong>{" "}
+                na Universidade Federal do Rio Grande do Norte e me indentifico
+                muito com minha graduação. Sou apaixonado por tecnologia,
+                programação e, também, por artes visuais.
               </div>
             ) : info == "educacao" ? (
               <div>
-                <strong className="text-orange-500">Ensino médio-técnico completo (2014 - 2017)</strong>
+                <strong className="text-orange-500">
+                  Ensino médio-técnico completo (2014 - 2017)
+                </strong>
                 <br />
                 <span>
                   Completei o ensino médio no IFRN - Campus Mossoró, onde fiz
@@ -120,7 +127,7 @@ const AboutComponent = () => {
                 </span>
                 <br />
                 <br />
-                <strong  className="text-orange-500">
+                <strong className="text-orange-500">
                   Ensino superior em andamento (2018 - Atualmente)
                 </strong>
                 <br />
@@ -131,7 +138,9 @@ const AboutComponent = () => {
               </div>
             ) : info == "experiencia" ? (
               <div>
-                <strong className="text-red-500">Estágio na Crevettic (2021 - 2022)</strong>
+                <strong className="text-red-500">
+                  Estágio na Crevettic (2021 - 2022)
+                </strong>
                 <br />
                 <br />
                 <span>
