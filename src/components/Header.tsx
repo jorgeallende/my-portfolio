@@ -12,7 +12,7 @@ const Header = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="cursor-pointer flex gap-2 items-center font-bold bg-orange-500 px-2 py-2 md:px-5 md:py-2 rounded-full text-base-cream-500">
+        <div className="cursor-pointer flex gap-2 items-center font-bold bg-orange-600 px-5 py-2 md:px-5 md:py-2 rounded-full text-base-cream-500">
           <img src={TelegramLogo} className="w-4 md:w-5" alt="" srcset="" />
           <span className={`hidden md:block text-sm`}>Entre em contato</span>
         </div>
