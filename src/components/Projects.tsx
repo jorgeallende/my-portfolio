@@ -12,61 +12,41 @@ const Projects = () => {
       </h1>
       <div className="flex h-12 sm:h-12 justify-around text-lg font-bold">
         <div
-          onClick={() =>
-            selectedProject == 0
-              ? setSelectedProject(10)
-              : setSelectedProject(0)
-          }
+          onClick={() => setSelectedProject(0)}
           className={`cursor-pointer h-min ease-in-out ${
-            selectedProject == 0 ? "border-t-[40px]" : "border-t-[16px]"
+            selectedProject == 0 ? "border-t-[41px]" : "border-t-[16px]"
           } border-t-[16px] hover:border-t-[40px] border-t-red-500 text-red-500 w-full flex-1 text-center`}
         >
           <span className="hidden sm:block">Crevettic</span>
         </div>
         <div
-          onClick={() =>
-            selectedProject == 1
-              ? setSelectedProject(10)
-              : setSelectedProject(1)
-          }
+          onClick={() => setSelectedProject(1)}
           className={`cursor-pointer h-min ease-in-out ${
-            selectedProject == 1 ? "border-t-[40px]" : "border-t-[16px]"
+            selectedProject == 1 ? "border-t-[41px]" : "border-t-[16px]"
           } border-t-[16px] hover:border-t-[40px] border-t-orange-500 text-orange-500 w-full flex-1 text-center`}
         >
           <span className="hidden sm:block">e-Sports Duo Finder</span>
         </div>
         <div
-          onClick={() =>
-            selectedProject == 2
-              ? setSelectedProject(10)
-              : setSelectedProject(2)
-          }
+          onClick={() => setSelectedProject(2)}
           className={`cursor-pointer h-min ease-in-out ${
-            selectedProject == 2 ? "border-t-[40px]" : "border-t-[16px]"
+            selectedProject == 2 ? "border-t-[41px]" : "border-t-[16px]"
           } border-t-[16px] hover:border-t-[40px] border-t-orange-400 text-orange-400 w-full flex-1 text-center`}
         >
           <span className="hidden sm:block">Stairs</span>
         </div>
         <div
-          onClick={() =>
-            selectedProject == 3
-              ? setSelectedProject(10)
-              : setSelectedProject(3)
-          }
+          onClick={() => setSelectedProject(3)}
           className={`cursor-pointer h-min ease-in-out ${
-            selectedProject == 3 ? "border-t-[40px]" : "border-t-[16px]"
+            selectedProject == 3 ? "border-t-[41px]" : "border-t-[16px]"
           } border-t-[16px] hover:border-t-[40px] border-t-blue-500 text-blue-500 w-full flex-1 text-center`}
         >
           <span className="hidden sm:block">Prefeitura de Mossoró</span>
         </div>
         <div
-          onClick={() =>
-            selectedProject == 4
-              ? setSelectedProject(10)
-              : setSelectedProject(4)
-          }
+          onClick={() => setSelectedProject(4)}
           className={`${
-            selectedProject == 4 ? "border-t-[40px]" : "border-t-[16px]"
+            selectedProject == 4 ? "border-t-[41px]" : "border-t-[16px]"
           } border-t-[16px] hover:border-t-[40px] border-t-blue-600 text-blue-600  w-full flex-1 text-center cursor-pointer h-min ease-in-out `}
         >
           <span className="hidden sm:block">Leon</span>

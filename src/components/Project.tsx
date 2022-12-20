@@ -18,7 +18,7 @@ const Project = (props: ProjectProps) => {
         </span>
         <br />
         <a
-          className="text-blue-600 flex gap-1 items-center"
+          className="text-blue-600 flex gap-1 items-center w-min"
           href={props.link}
           target="_blank"
           rel="noopener noreferrer"
