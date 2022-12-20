@@ -10,7 +10,7 @@ import { useState } from "react";
 import { sobre, educacao, experiencia, habilidades } from "../utils/info";
 import HeaderLogo from "../assets/header-logo.svg";
 
-type Props = {
+type Props = {F
   src?: string | undefined;
 };
 
@@ -23,9 +23,9 @@ const AboutComponent = () => {
   }
 
   return (
-    <div className="h-[90vh] py-16 flex items-center justify-around">
-      <div className="bg-base-cream-300 w-[540px] flex px-2 shadow-xl min-h-[90%]">
-        <div className="w-14 flex flex-col items-center h-full gap-8 justify-around py-6 h-auto">
+    <div className="h-auto my-16 pt-16 flex items-center justify-around flex-col-reverse gap-8 lg:gap-0 lg:flex-row">
+      <div className="bg-base-cream-300 w-11/12 sm:w-9/12 md:w-[540px] flex flex-col sm:flex-row px-2 shadow-xl min-h-[90%] ">
+        <div className="sm:w-14 flex flex-row md:flex-col items-center gap-8 justify-around py-6">
           <div
             className="cursor-pointer"
             onClick={() => {
@@ -65,27 +65,27 @@ const AboutComponent = () => {
             <img src={info == "habilidades" ? WrenchAlt : Wrench} alt="" />
           </div>
         </div>
-        <div className="w-1 bg-base-cream-600 flex flex-col">
+        <div className="h-1 w-full sm:w-1 sm:h-auto bg-base-cream-600 flex sm:flex-col z-50">
           <div
-            className={` w-full flex-1 ${info == "sobre" ? "bg-blue-600" : ""}`}
+            className={`h-full w-full flex-1 ${info == "sobre" ? "bg-blue-600" : ""}`}
           ></div>
           <div
-            className={` w-full flex-1 ${
+            className={`h-full w-full sm:h-full sm:w-1 flex-1 ${
               info == "educacao" ? "bg-orange-500" : ""
             }`}
           ></div>
           <div
-            className={` w-full flex-1 ${
+            className={`h-full w-full sm:h-full sm:w-1 flex-1 ${
               info == "experiencia" ? "bg-red-600" : ""
             }`}
           ></div>
           <div
-            className={` w-full flex-1 ${
+            className={`h-full w-full sm:h-full sm:w-1 flex-1 ${
               info == "habilidades" ? "bg-mint-500" : ""
             }`}
           ></div>
         </div>
-        <div className="px-6 py-6 flex flex-col gap-4 flex-1">
+        <div className="px-3 sm:px-6 py-6 flex flex-col gap-4 flex-1">
           <h1
             className={`font-bold text-2xl ${
               info == "sobre"
@@ -187,7 +187,7 @@ const AboutComponent = () => {
       </div>
 
       <div
-        className={`text-end text-8xl font-black ${
+        className={`text-end text-5xl sm:text-6xl lg:text-7xl font-black ${
           info == "sobre"
             ? "text-blue-600"
             : info == "educacao"
@@ -197,7 +197,7 @@ const AboutComponent = () => {
             : info == "habilidades"
             ? "text-mint-500"
             : ""
-        } flex-1`}
+        }`}
       >
         <h1>
           {info == "sobre"
