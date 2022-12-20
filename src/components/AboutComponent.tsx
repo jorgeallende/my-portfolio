@@ -23,7 +23,7 @@ const AboutComponent = () => {
   }
 
   return (
-    <div className="h-auto my-16 pt-16 flex items-center justify-around flex-col-reverse gap-8 lg:gap-0 lg:flex-row">
+    <div className="h-auto my-16 pt-24 sm:pt-0 flex items-center justify-around flex-col-reverse gap-8 lg:gap-0 lg:flex-row">
       <div className="bg-base-cream-300 w-11/12 sm:w-9/12 md:w-[540px] flex flex-col sm:flex-row px-2 shadow-xl min-h-[90%] ">
         <div className="sm:w-14 flex flex-row md:flex-col items-center gap-8 justify-around py-6">
           <div
