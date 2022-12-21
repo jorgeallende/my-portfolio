@@ -105,13 +105,13 @@ const AboutComponent = () => {
                 Me chamo{" "}
                 <strong className="text-blue-600">Jorge Allende</strong>. <br />{" "}
                 <br />
-                Tenho 22 anos. Moro de Mossoró-RN, onde nasci e fui criado.
+                Tenho 22 anos. Moro em Mossoró-RN, onde nasci e fui criado.
                 Sempre tive uma inclinação para informática e sempre sonhei me
                 seguir na área. Hoje estou cursando{" "}
                 <strong className="text-blue-600">
                   Ciência da Computação
                 </strong>{" "}
-                na Universidade Federal do Rio Grande do Norte e me indentifico
+                na Universidade Federal Rural do Rio Grande do Norte e me indentifico
                 muito com minha graduação. Sou apaixonado por tecnologia,
                 programação e, também, por artes visuais.
               </div>
@@ -144,7 +144,7 @@ const AboutComponent = () => {
                 <br />
                 <br />
                 <span>
-                  Estagiei na empresa <strong>Crevettic</strong>, uma empresa
+                  Estagiei na empresa <strong>Crevettic</strong>, 
                   que desenvolve e mantem um sistema para auxilio de
                   piscicultura, como desenvolvedor web. Trabalhei desenvolvendo
                   e fazendo a manutenção de telas e componentes para a
