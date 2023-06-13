@@ -10,19 +10,53 @@ import { useState } from "react";
 import { sobre, educacao, experiencia, habilidades } from "../utils/info";
 import HeaderLogo from "../assets/header-logo.svg";
 
-type Props = { F; src?: string | undefined };
+// type Props = { F; src?: string | undefined };
 
 const AboutComponent = () => {
   const [info, setInfo] = useState("sobre");
 
   function InfoSwap(newInfo: string) {
+    hackerText();
     console.log(newInfo);
     setInfo(newInfo);
   }
 
+  //hacker-text text onmouseover
+  const letters = "abcdefghijklmnopqrstuvwxyz";
+
+  const hackerText = () => {
+    const text = document.querySelector(".hacker-text");
+
+    let interations = 0;
+
+    console.log(text);
+
+    const interval = setInterval(() => {
+      text!.textContent = text!
+        .textContent!.split("")
+        .map((letter: string, index) => {
+          if (index < interations) {
+            console.log(
+              "DATAVLUE[INDEX]",
+              text!.getAttribute("data-value")?.split("")[index]
+            );
+            return text!.getAttribute("data-value")?.split("")[index];
+          }
+
+          return letters[Math.floor(Math.random() * 26)];
+        })
+        .join("");
+
+      if (interations >= text?.getAttribute("data-value")?.length!)
+        clearInterval(interval);
+
+      interations++;
+    }, 60);
+  };
+
   return (
-    <div className="h-full my-16 pt-24 sm:pt-0 flex items-center justify-around flex-col-reverse gap-8 lg:gap-0 lg:flex-row">
-      <div className="bg-base-cream-300  w-11/12 sm:w-9/12 md:w-[540px] flex flex-col sm:flex-row px-2 shadow-xl h-full ">
+    <div className="h-screen my-16 pt-24 sm:pt-0 flex items-center justify-around flex-col-reverse gap-8 lg:gap-0 lg:flex-row">
+      <div className="bg-base-cream-300 w-11/12 sm:w-9/12 md:w-[540px] flex flex-col sm:flex-row px-2 shadow-xl h-4/5">
         <div className="sm:w-14 flex flex-row md:flex-col items-center gap-8 justify-around py-6">
           <div
             className="cursor-pointer"
@@ -111,9 +145,9 @@ const AboutComponent = () => {
                 <strong className="text-blue-600">
                   Ciência da Computação
                 </strong>{" "}
-                na Universidade Federal Rural do Rio Grande do Norte e me indentifico
-                muito com minha graduação. Sou apaixonado por tecnologia,
-                programação e, também, por artes visuais.
+                na Universidade Federal Rural do Rio Grande do Norte e me
+                indentifico muito com minha graduação. Sou apaixonado por
+                tecnologia, programação e, também, por artes visuais.
               </div>
             ) : info == "educacao" ? (
               <div>
@@ -144,12 +178,11 @@ const AboutComponent = () => {
                 <br />
                 <br />
                 <span>
-                  Estagiei na empresa <strong>Crevettic</strong>, 
-                  que desenvolve e mantem um sistema para auxilio de
-                  piscicultura, como desenvolvedor web. Trabalhei desenvolvendo
-                  e fazendo a manutenção de telas e componentes para a
-                  plataforma. Utilizei tecnologias como React, JavaScript, HTML,
-                  CSS entre outras.
+                  Estagiei na empresa <strong>Crevettic</strong>, que desenvolve
+                  e mantem um sistema para auxilio de piscicultura, como
+                  desenvolvedor web. Trabalhei desenvolvendo e fazendo a
+                  manutenção de telas e componentes para a plataforma. Utilizei
+                  tecnologias como React, JavaScript, HTML, CSS entre outras.
                 </span>
                 <br />
                 <br />
@@ -196,7 +229,7 @@ const AboutComponent = () => {
       </div>
 
       <div
-        className={`text-end text-5xl sm:text-6xl lg:text-7xl font-black ${
+        className={`ml-8 text-start md:text-start flex-1 text-5xl sm:text-6xl lg:text-7xl font-black ${
           info == "sobre"
             ? "text-blue-600"
             : info == "educacao"
@@ -208,7 +241,18 @@ const AboutComponent = () => {
             : ""
         }`}
       >
-        <h1>
+        <h1
+          className="hacker-text"
+          data-value={
+            info == "sobre"
+              ? "Sobre"
+              : info == "educacao"
+              ? "Educação"
+              : info == "experiencia"
+              ? "Experiência"
+              : info == "habilidades" && "Habilidades"
+          }
+        >
           {info == "sobre"
             ? sobre.title
             : info == "educacao"

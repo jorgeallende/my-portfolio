@@ -11,7 +11,7 @@ interface ProjectProps {
 const Project = (props: ProjectProps) => {
   console.log(props);
   return (
-    <div className="mt-9 flex gap-8 flex-col md:flex-row">
+    <div className="mt-16 flex gap-8 flex-col md:flex-row">
       <div className="flex flex-col">
         <span className="text-lg text-justify flex flex-col">
           {props?.description}
@@ -31,7 +31,12 @@ const Project = (props: ProjectProps) => {
           )}
         </a>
       </div>
-      <img src={props?.imgSrc} className="max-w-[210px] self-center" alt="" srcset="" />
+      <img
+        src={props?.imgSrc}
+        className="max-w-[210px] self-center"
+        alt=""
+        srcset=""
+      />
     </div>
   );
 };

@@ -10,19 +10,19 @@ const Projects = () => {
       <h1 className="text-6xl lg:text-8xl font-black text-base-cream-300 my-6">
         Projetos
       </h1>
-      <div className="flex h-12 sm:h-12 justify-around text-lg font-bold">
+      <div className="flex w-1/2 h-12 sm:h-12 justify-around text-lg font-bold">
         <div
           onClick={() => setSelectedProject(0)}
           className={`cursor-pointer h-min ease-in-out ${
-            selectedProject == 0 ? "border-t-[41px]" : "border-t-[16px]"
-          } border-t-[16px] hover:border-t-[40px] border-t-red-500 text-red-500 w-full flex-1 text-center`}
+            selectedProject == 0 ? "border-t-[40px]" : "border-t-[16px]"
+          } border-t-[16px] hover:border-t-[40px] border-t-red-500 text-red-500 flex-1 text-center w-10`}
         >
           <span className="hidden sm:block">Crevettic</span>
         </div>
         <div
           onClick={() => setSelectedProject(1)}
           className={`cursor-pointer h-min ease-in-out ${
-            selectedProject == 1 ? "border-t-[41px]" : "border-t-[16px]"
+            selectedProject == 1 ? "border-t-[40px]" : "border-t-[16px]"
           } border-t-[16px] hover:border-t-[40px] border-t-orange-500 text-orange-500 w-full flex-1 text-center`}
         >
           <span className="hidden sm:block">e-Sports Duo Finder</span>
@@ -30,7 +30,7 @@ const Projects = () => {
         <div
           onClick={() => setSelectedProject(2)}
           className={`cursor-pointer h-min ease-in-out ${
-            selectedProject == 2 ? "border-t-[41px]" : "border-t-[16px]"
+            selectedProject == 2 ? "border-t-[40px]" : "border-t-[16px]"
           } border-t-[16px] hover:border-t-[40px] border-t-orange-400 text-orange-400 w-full flex-1 text-center`}
         >
           <span className="hidden sm:block">Stairs</span>
@@ -38,7 +38,7 @@ const Projects = () => {
         <div
           onClick={() => setSelectedProject(3)}
           className={`cursor-pointer h-min ease-in-out ${
-            selectedProject == 3 ? "border-t-[41px]" : "border-t-[16px]"
+            selectedProject == 3 ? "border-t-[40px]" : "border-t-[16px]"
           } border-t-[16px] hover:border-t-[40px] border-t-blue-500 text-blue-500 w-full flex-1 text-center`}
         >
           <span className="hidden sm:block">Prefeitura de Mossoró</span>
@@ -46,7 +46,7 @@ const Projects = () => {
         <div
           onClick={() => setSelectedProject(4)}
           className={`${
-            selectedProject == 4 ? "border-t-[41px]" : "border-t-[16px]"
+            selectedProject == 4 ? "border-t-[40px]" : "border-t-[16px]"
           } border-t-[16px] hover:border-t-[40px] border-t-blue-600 text-blue-600  w-full flex-1 text-center cursor-pointer h-min ease-in-out `}
         >
           <span className="hidden sm:block">Leon</span>
