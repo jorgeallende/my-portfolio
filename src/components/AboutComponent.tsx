@@ -133,7 +133,7 @@ const AboutComponent = () => {
                 : ""
             }`}
           ></h1>
-          <span className="text-justify">
+          <div className="text-justify">
             {info == "sobre" ? (
               <div>
                 Me chamo{" "}
@@ -152,7 +152,7 @@ const AboutComponent = () => {
             ) : info == "educacao" ? (
               <div>
                 <strong className="text-orange-500">
-                  Ensino médio-técnico completo (2014 - 2017)
+                  Ensino médio-técnico - Informática (IFRN) (2014 - 2017)
                 </strong>
                 <br />
                 <span>
@@ -162,12 +162,12 @@ const AboutComponent = () => {
                 <br />
                 <br />
                 <strong className="text-orange-500">
-                  Ensino superior em andamento (2018 - Atualmente)
+                  Ensino Superior - Ciência da Computação (UFERSA) (2018 - 2024)
                 </strong>
                 <br />
                 <span>
-                  Atualmente faço Ciência da Computação na UFERSA - Campus
-                  Mossoró.
+                  Me formei como Bacharel em Ciência da Computação no início do
+                  ano de 2024
                 </span>
               </div>
             ) : info == "experiencia" ? (
@@ -187,16 +187,30 @@ const AboutComponent = () => {
                 <br />
                 <br />
                 <strong className="text-red-500">
-                  Estágio em Prefeitura Municipal de Mossoró (2022 - Atualmente)
+                  Estágio em Prefeitura Municipal de Mossoró (2022 - 2023)
                 </strong>
                 <br />
                 <br />
                 <span>
-                  Atualmente estou estagiando na{" "}
+                  Estagiei na <strong>Prefeitura Municipal de Mossoró</strong>{" "}
+                  como desenvolvedor web. Lá eu desenvolvi sistemas para todas
+                  as áreas da gestão pública municipal, utilizando tecnologias
+                  como PHP, Laravel, MySQL, HTML, CSS e JavaScript.
+                </span>
+                <br />
+                <br />
+                <strong className="text-red-500">
+                  Desenvolvedor Júnior em Prefeitura Municipal de Mossoró (2022
+                  - Atualmente)
+                </strong>
+                <br />
+                <br />
+                <span>
+                  Trabalho agora na{" "}
                   <strong>Prefeitura Municipal de Mossoró</strong> como
-                  desenvolvedor web. Lá eu desenvolvo sistemas para todas as
-                  áreas da gestão pública municipal, utilizando tecnologias como
-                  PHP, Laravel, MySQL, HTML, CSS e JavaScript.
+                  desenvolvedor web júnior. Continuo com as mesmas atribuições
+                  do estágio. Com algumas adições na função, me tornando um
+                  desenvolvedor full-stack.
                 </span>
                 <br />
               </div>
@@ -224,7 +238,7 @@ const AboutComponent = () => {
             ) : (
               ""
             )}
-          </span>
+          </div>
         </div>
       </div>
 
