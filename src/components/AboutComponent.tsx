@@ -139,9 +139,9 @@ const AboutComponent = () => {
                 Me chamo{" "}
                 <strong className="text-blue-600">Jorge Allende</strong>. <br />{" "}
                 <br />
-                Tenho 22 anos. Moro em Mossoró-RN, onde nasci e fui criado.
+                Tenho 24 anos. Moro em Mossoró-RN, onde nasci e fui criado.
                 Sempre tive uma inclinação para informática e sempre sonhei me
-                seguir na área. Hoje estou cursando{" "}
+                seguir na área. Hoje sou formado em{" "}
                 <strong className="text-blue-600">
                   Ciência da Computação
                 </strong>{" "}
