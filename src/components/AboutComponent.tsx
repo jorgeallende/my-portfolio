@@ -56,7 +56,7 @@ const AboutComponent = () => {
 
   return (
     <div className=" my-16 sm:pt-0 flex items-center  flex-col-reverse gap-4 sm:gap-8 lg:gap-0 lg:flex-row">
-      <div className="bg-base-cream-300 w-11/12 sm:w-9/12 md:w-[540px] flex flex-col sm:flex-row px-2 shadow-xl h-[500px] sm:h-[600px] lg:h-[500px]">
+      <div className="bg-base-cream-300 w-11/12 sm:w-9/12 md:w-[540px] flex flex-col sm:flex-row px-2 shadow-xl h-[500px] sm:h-[600px] lg:h-[500px] flex-shrink-0">
         <div className="w-full sm:w-auto md:w-14 flex flex-row md:flex-col items-center gap-4 sm:gap-6 md:gap-8 justify-around py-6">
           <div
             className="cursor-pointer"
@@ -119,7 +119,7 @@ const AboutComponent = () => {
             }`}
           ></div>
         </div>
-        <div className="px-3 sm:px-6 py-6 flex flex-col gap-4 flex-1 overflow-y-auto">
+        <div className="px-3 sm:px-6 py-6 flex my-4 flex-col gap-4 flex-1 overflow-y-auto">
           <h1
             className={`font-bold text-2xl ${
               info == "sobre"

@@ -60,7 +60,7 @@ export const projectCategories: ProjectCategory[] = [
     color: "red",
     projects: [
       {
-        name: "Crevettic",
+        name: "Plataforma de Psicultura Crevettic",
         description:
           "É uma solução focada na gestão de conhecimento e inteligência de negócio das fazendas de camarão e peixe, capaz de oferecer sugestões aos produtores por meio de análises de dados que utilizam técnicas de mineração de dados e gera relatórios gráficos dinâmicos para auxiliar na tomada de decisão.",
         imgSrc: CrevetticLogo,

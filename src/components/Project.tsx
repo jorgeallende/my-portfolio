@@ -15,22 +15,22 @@ const Project = (props: ProjectProps) => {
   const getTechColor = (tech: string) => {
     switch (tech.toLowerCase()) {
       case "react":
-        return "bg-blue-100 text-blue-800 border-blue-200";
+        return "bg-blue-800 text-white";
       case "spring":
-        return "bg-green-100 text-green-800 border-green-200";
+        return "bg-green-800 text-white";
       case "nest":
-        return "bg-red-100 text-red-800 border-red-200";
+        return "bg-red-800 text-white";
       case "laravel":
-        return "bg-orange-100 text-orange-800 border-orange-200";
+        return "bg-orange-800 text-white";
       case "ruby on rails":
-        return "bg-purple-100 text-purple-800 border-purple-200";
+        return "bg-purple-800 text-white";
       default:
-        return "bg-gray-100 text-gray-800 border-gray-200";
+        return "bg-gray-800 text-white";
     }
   };
 
   return (
-    <div className="mt-16 flex gap-8 flex-col md:flex-row">
+    <div className="mt-16 flex gap-8 flex-col md:flex-row ">
       <div className="flex flex-col">
         <span className="text-lg text-justify flex flex-col">
           {props?.description}
@@ -41,7 +41,7 @@ const Project = (props: ProjectProps) => {
           {props.technologies.map((tech, index) => (
             <span
               key={index}
-              className={`px-3 py-1 text-sm font-medium rounded-full border transition-all duration-200 hover:scale-105 ${getTechColor(
+              className={`px-5 py-1 text-sm font-medium rounded-full transition-all duration-200 hover:scale-105 ${getTechColor(
                 tech
               )}`}
             >
