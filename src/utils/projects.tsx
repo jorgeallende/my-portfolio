@@ -116,7 +116,7 @@ export const projectCategories: ProjectCategory[] = [
           "Sistema de gestão da Fundação Cultural de Mossoró (Funcidat), incluindo controle de eventos culturais, cadastro de artistas e gestão de equipamentos culturais da cidade.",
         imgSrc: PrefeituraLogo,
         link: "https://funcidat.mossoro.rn.gov.br/",
-        linkTitle: "Em desenvolvimento",
+        linkTitle: "Funcidat",
         technologies: ["React", "Ruby on Rails"],
       },
       {

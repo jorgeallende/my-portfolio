@@ -38,7 +38,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
+  background-color: #00000040;
   border-radius: 2px;
   border: 6px solid transparent;
 }
